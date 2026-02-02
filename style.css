@@ -1,0 +1,321 @@
+:root {
+    --bg: #111118;
+    --bg-raised: #1a1a24;
+    --text: #e0ddd4;
+    --text-dim: #8a8780;
+    --accent: #c49a6c;
+    --border: #2a2a35;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.header-left h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+#site-subtitle {
+    font-size: 13px;
+    color: var(--text-dim);
+    font-style: italic;
+    margin-top: 2px;
+}
+
+#site-subtitle a {
+    color: var(--text-dim);
+    text-decoration: none;
+}
+
+#site-subtitle a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+/* Navigation */
+#header-nav, #footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-btn {
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.nav-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.nav-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+#strip-counter, #footer-counter {
+    font-size: 13px;
+    color: var(--text-dim);
+    min-width: 60px;
+    text-align: center;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+
+/* Strip image */
+#strip-container {
+    background: var(--bg-raised);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+#strip-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Strip info */
+#strip-info {
+    margin-top: 20px;
+    padding: 0 4px;
+}
+
+.episode-tag {
+    font-size: 12px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#strip-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 4px;
+    color: var(--text);
+}
+
+/* Notes */
+#notes-section {
+    margin-top: 28px;
+    padding: 0 4px;
+    display: none;
+}
+
+#notes-section.has-notes {
+    display: block;
+}
+
+#notes-content {
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-dim);
+    font-style: italic;
+}
+
+#notes-content p {
+    margin-bottom: 12px;
+}
+
+#notes-content p:last-child {
+    margin-bottom: 0;
+}
+
+#notes-content strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+#notes-content em {
+    font-style: normal;
+    color: var(--text);
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 32px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#footer-nav {
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+/* Episode index */
+#episode-index {
+    margin-top: 8px;
+}
+
+#episode-index summary {
+    cursor: pointer;
+    color: var(--text-dim);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 0;
+}
+
+#episode-index summary:hover {
+    color: var(--accent);
+}
+
+#index-content {
+    padding: 12px 0;
+}
+
+.index-episode {
+    margin-bottom: 12px;
+}
+
+.index-episode-title {
+    font-size: 13px;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.index-strip-link {
+    display: block;
+    padding: 3px 0 3px 16px;
+    font-size: 13px;
+    color: var(--text-dim);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.index-strip-link:hover {
+    color: var(--accent);
+}
+
+.index-strip-link.active {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Colophon */
+.colophon {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-dim);
+    opacity: 0.6;
+}
+
+.colophon a {
+    color: var(--text-dim);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.colophon a:hover {
+    color: var(--accent);
+}
+
+/* About page */
+.about-page {
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.about-page h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--accent);
+    margin-bottom: 24px;
+}
+
+.about-page p {
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.about-page ul {
+    margin: 0 0 16px 20px;
+    font-size: 15px;
+}
+
+.about-page li {
+    margin-bottom: 6px;
+}
+
+.about-page a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.about-page a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    header {
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main {
+        padding: 16px 12px;
+    }
+
+    #strip-title {
+        font-size: 17px;
+    }
+
+    .nav-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 20px 16px;
+    }
+}

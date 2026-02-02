@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Halmsway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1 id="site-title">In Halmsway</h1>
+            <p id="site-subtitle"><a href="about.html"></a></p>
+        </div>
+        <nav id="header-nav">
+            <button id="prev-btn" class="nav-btn" onclick="navigate(-1)">&larr; Prev</button>
+            <span id="strip-counter"></span>
+            <button id="next-btn" class="nav-btn" onclick="navigate(1)">Next &rarr;</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="strip-container">
+            <img id="strip-image" alt="Comic strip">
+        </div>
+
+        <div id="strip-info">
+            <span id="strip-episode" class="episode-tag"></span>
+            <h2 id="strip-title"></h2>
+        </div>
+
+        <div id="notes-section">
+            <div id="notes-content"></div>
+        </div>
+    </main>
+
+    <footer>
+        <nav id="footer-nav">
+            <button class="nav-btn" onclick="navigate(-1)">&larr; Prev</button>
+            <span id="footer-counter"></span>
+            <button class="nav-btn" onclick="navigate(1)">Next &rarr;</button>
+        </nav>
+
+        <details id="episode-index">
+            <summary>Episode index</summary>
+            <div id="index-content"></div>
+        </details>
+
+        <p class="colophon"><a href="about.html">All art generated with AI.</a> Based on a tabletop RPG campaign.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

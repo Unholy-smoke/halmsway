@@ -1,0 +1,38 @@
+{
+  "title": "In Halmsway",
+  "subtitle": "A D&D campaign, retold as a graphic novel. All art AI-generated.",
+  "strips": [
+    {
+      "id": "S01E01a",
+      "file": "strips/S01E01a.png",
+      "title": "Blizzard at the Halmsway Inn",
+      "episode": "S01E01",
+      "episode_title": "The Halmsway Inn",
+      "notes": "notes/S01E01a.md"
+    },
+    {
+      "id": "S01E01b",
+      "file": "strips/S01E01b.png",
+      "title": "A Bang at the Door",
+      "episode": "S01E01",
+      "episode_title": "The Halmsway Inn",
+      "notes": "notes/S01E01b.md"
+    },
+    {
+      "id": "S01E01c",
+      "file": "strips/S01E01c.png",
+      "title": "Erik goes downstairs",
+      "episode": "S01E01",
+      "episode_title": "The Halmsway Inn",
+      "notes": "notes/S01E01c.md"
+    },
+    {
+      "id": "S01E01d",
+      "file": "strips/S01E01d.png",
+      "title": "Trouble downstairs",
+      "episode": "S01E01",
+      "episode_title": "The Halmsway Inn",
+      "notes": "notes/S01E01d.md"
+    }
+  ]
+}
