@@ -33,6 +33,30 @@
       "episode": "S01E01",
       "episode_title": "The Halmsway Inn",
       "notes": "notes/S01E01d.md"
+    },
+    {
+      "id": "S01E01e",
+      "file": "strips/S01E01e.png",
+      "title": "Confronting the wight",
+      "episode": "S01E01",
+      "episode_title": "The Halmsway Inn",
+      "notes": "notes/S01E01e.md"
+    },
+    {
+      "id": "S01E01f",
+      "file": "strips/S01E01f.png",
+      "title": "Last Will and Testament of Erik the Barkeep",
+      "episode": "S01E01",
+      "episode_title": "The Halmsway Inn",
+      "notes": "notes/S01E01f.md"
+    },
+    {
+      "id": "S01E01g",
+      "file": "strips/S01E01g.png",
+      "title": "\"I would like to rage\"",
+      "episode": "S01E01",
+      "episode_title": "The Halmsway Inn",
+      "notes": "notes/S01E01g.md"
     }
   ]
 }
