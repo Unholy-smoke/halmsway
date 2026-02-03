@@ -1,8 +1,11 @@
 let data = null;
 let currentIndex = 0;
 
+// Bump this number when you publish new strips to bust browser cache
+const CACHE_VERSION = 2;
+
 async function init() {
-    const res = await fetch('strips.json');
+    const res = await fetch(`strips.json?v=${CACHE_VERSION}`);
     data = await res.json();
 
     document.querySelector('#site-subtitle a').textContent = data.subtitle;
